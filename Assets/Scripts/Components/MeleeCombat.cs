@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
+[RequireComponent(typeof(AudioSource))]
 public class MeleeCombat : MonoBehaviour
 {
     [Header("Attack parameters")]
@@ -12,11 +13,13 @@ public class MeleeCombat : MonoBehaviour
     [SerializeField] private float _attackTimer;
     [SerializeField] private int _attackCount = 1;
     [SerializeField] private float _hitDelay = 0;
+    [SerializeField] private AudioSource _audioSource;
 
     private Animator _animator;
 
     void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
         _animator = GetComponent<Animator>();
     }
 
@@ -34,6 +37,7 @@ public class MeleeCombat : MonoBehaviour
         if (_canAttack)
         {
             GetComponent<Enemy>().Agent.isStopped = true;
+            _animator.SetFloat("Speed", 0);
             int currentAttack = Random.Range(0, _attackCount);
             switch (currentAttack)
             {
@@ -47,6 +51,7 @@ public class MeleeCombat : MonoBehaviour
             }
             _canAttack = false;
             Invoke("HitPlayer", _hitDelay);
+            _audioSource.Play();
         }
     }
 
@@ -62,6 +67,7 @@ public class MeleeCombat : MonoBehaviour
             if (_attackTimer < _hitCooldown)
             {
                 GetComponent<Enemy>().Agent.isStopped = true;
+                _animator.SetFloat("Speed", 0);
                 _attackTimer += Time.deltaTime;
             }
             else

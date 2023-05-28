@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.EventSystems.EventTrigger;
 
+[RequireComponent(typeof(AudioSource))]
 public class RedSquareTutorialBattle : MonoBehaviour
 {
     [SerializeField] private GameObject _lightEnemyPrefab;
@@ -25,6 +27,13 @@ public class RedSquareTutorialBattle : MonoBehaviour
     public bool FinalBattleWasStarted = false;
     public bool ReinforcementWasStarted = false;
 
+    public bool FirstMessageWasShown = false;
+    public bool SecondMessageWasShown = false;
+    public bool ThirdMessageWasShown = false;
+    public bool FourthMessageWasShown = false;
+    public bool FifthMessageWasShown = false;
+    public bool FinalMessageWasShown = false;
+
     [SerializeField] private float _firstBattleDelay = 2f;
     [SerializeField] private float _secondBattleDelay = 2f;
     [SerializeField] private float _thirdBattleDelay = 2f;
@@ -33,9 +42,19 @@ public class RedSquareTutorialBattle : MonoBehaviour
     [SerializeField] private float _finalBattleDelay = 2f;
     [SerializeField] private float _reinforcementDelay = 2f;
 
+    private AIAssistant _aiAssistant;
+    [SerializeField] private GameObject _endPanel;
+    //[Header("Audio parameters")]
+    //[SerializeField] private AudioClip _audioClip;
+    //private AudioSource _audioSource;
+
     private void Start()
     {
-        _currentBattle = 1;
+        _aiAssistant = FindObjectOfType<AIAssistant>();
+        //_audioSource = GetComponent<AudioSource>();
+        _currentBattle = 3;
+        _aiAssistant.SayInformation("Чтобы подобрать оружие, воспользуйтесь" +
+            "клавишей [E]", 5f);
     }
 
     private void Update()
@@ -54,24 +73,84 @@ public class RedSquareTutorialBattle : MonoBehaviour
 
         if (_aliveEnemies.Count == 0 && _currentBattle == 5)
         {
-           GameObject.FindWithTag("Player").GetComponent<StarterAssetsInputs>().
-                analogMovement = true;
-            FindObjectOfType<AIAssistant>().SayInformation(
-                "ИИ: Мы однозначно попали в Москву 1812 года!\r\n\r\nПоздравляю," +
-                " вы — попаданец.\r\n\r\nМне нужно время для анализа ситуации и " +
-                "активации защитных протоколов. До того времени постарайтесь не " +
-                "умирать.\r\n\r\nВнимание!", 10);
+            if (!FirstMessageWasShown)
+            {
+                GameObject.FindWithTag("Player").GetComponent<StarterAssetsInputs>().
+                    analogMovement = true;
+                _aiAssistant.SayInformation("ИИ: Мы однозначно попали в Москву 1812 " +
+                    "года!\r\n\r\nПоздравляю, вы — попаданец.\r\n\r\nМне нужно время" +
+                    " для анализа ситуации и активации защитных протоколов. До того " +
+                    "времени постарайтесь не умирать.\r\n\r\nВнимание!", 10);
+                FirstMessageWasShown = true;
+            }
         }
         else if (_aliveEnemies.Count == 0 && _currentBattle == 4)
         {
-            GameObject.FindWithTag("Player").GetComponent<StarterAssetsInputs>().
-                analogMovement = true;
-            FindObjectOfType<AIAssistant>().SayInformation(
-                "ИИ: Итак, по моим данных приближается последняя волна противников." +
-                " \r\nХорошая новость: я даю вам доступ к особым способностям." +
-                "\r\nПлохая: скорее всего они вам мало помогут с сильнейшими " +
-                "противниками\r\n\r\nПродержитесь здесь и помогу вам выбраться, " +
-                "ведь наш путь лежит в Подземелья Кремля!\r\n\r\nВнимание!", 10);
+            if (!SecondMessageWasShown)
+            {
+                GameObject.FindWithTag("Player").GetComponent<StarterAssetsInputs>().
+                    analogMovement = true;
+                _aiAssistant.SayInformation("ИИ: Итак, по моим данных приближается " +
+                    "последняя волна противников.\r\nХорошая новость: я даю вам доступ " +
+                    "к особым способностям.\r\nПлохая: скорее всего они вам мало помогут" +
+                    " с сильнейшими противниками\r\n\r\nПродержитесь здесь и помогу вам " +
+                    "выбраться, ведь наш путь лежит в Подземелья Кремля!\r\n\r\nВнимание!",
+                    10);
+                SecondMessageWasShown = true;
+            }
+        }
+        else if (_aliveEnemies.Count == 0 && _currentBattle == 2)
+        {
+            if (!ThirdMessageWasShown)
+            {
+                _aiAssistant.SayInformation("Вы подняли: французский кремневый " +
+                    "гладкоствольный пистолет.\r\nМасса: 1,3 кг.\r\nКалибр: 17.1 мм" +
+                    "\r\nВыстрел происходит с помощью искр ударного кремневого замка, " +
+                    "также именуемого батарейным.\r\nПрицельная дальность: дальше 50 " +
+                    "метров стрелять бессмысленно.\r\n\r\nИспользование: на перезарядку " +
+                    "данного оружия вам потребуется около минуты – поэтому я рекомендую " +
+                    "использовать его в качестве однозарядного и не перезаряжаться в " +
+                    "ходе боя. В зависимости от числа и вооружения противников – за " +
+                    "время перезарядки вас могут убить от 1 до 3 раз.\r\n\r\nВыстрелить" +
+                    " – нажмите R\r\nПерезарядка — 15 секунд (авто)", 10f);
+                ThirdMessageWasShown = true;
+            }
+        }
+        else if (_currentBattle == 6)
+        {
+            if (!FourthMessageWasShown)
+            {
+                _aiAssistant.SayInformation("ИИ: Я даю вам доступ к особым способностям:" +
+                    "\r\n\r\nЗащитная не дает вам получать урон\r\nОслепляющая " +
+                    "прерывает действия противников\r\n\r\nНажмите [T]", 5f);
+                Time.timeScale = 0.1f;
+                Invoke("UnFreezeTime", 1f);
+                FourthMessageWasShown = true;
+            }
+        }
+        else if (_currentBattle == 6 && FourthMessageWasShown)
+        {
+            if (!FifthMessageWasShown)
+            {
+                _aiAssistant.SayInformation("ИИ: Выберите вторую способность и " +
+                    "попробуйте ослепить противников, когда будете рядом с ними\r\n\r\n" +
+                    "Нажмите [K] используйте вторую способность", 5f);
+                Time.timeScale = 0.1f;
+                Invoke("UnFreezeTime", 1f);
+                FourthMessageWasShown = true;
+            }
+        }
+
+        if (FinalBattleWasStarted && _aliveEnemies.Count == 0)
+        {
+            if (!FinalMessageWasShown)
+            {
+                _endPanel.GetComponent<Animator>().Play("SmoothlyTransition");
+                _aiAssistant.SayInformation("Скорее ступайте к Поздемелью Кремля! " +
+                    "(Конец демонстрационной версии)", 15f);
+                Invoke("QuitApplication", 5f);
+                FinalMessageWasShown = true;
+            }
         }
 
         switch (_currentBattle)
@@ -99,6 +178,8 @@ public class RedSquareTutorialBattle : MonoBehaviour
                 break;
         }
     }
+
+    private void UnFreezeTime() { Time.timeScale = 1.0f; }
 
     private void FirstBattle()
     {
@@ -137,6 +218,7 @@ public class RedSquareTutorialBattle : MonoBehaviour
     {
         if (!FourthBattleWasStarted)
         {
+            //_audioSource.Play();
             GameObject.FindWithTag("Player").GetComponent<StarterAssetsInputs>().
                 analogMovement = false;
             SpawnEnemy(_shooterEnemyPrefab);
@@ -152,16 +234,26 @@ public class RedSquareTutorialBattle : MonoBehaviour
 
     private void FinalBattle()
     {
-        if(FinalBattleWasStarted)
+        if(!FinalBattleWasStarted)
         {
-            FindObjectOfType<AIAssistant>().SayInformation(
+            _aiAssistant.SayInformation(
                 "ИИ: я даю вам доступ к защитной способности, она " +
                 "предотвращает получение любого урона в течении пяти " +
                 "секунд. Но у неё мало зарядов, используйте её разумно!", 10);
             SpawnEnemy(_cuirassierEnemyPrefab);
             SpawnEnemy(_cuirassierEnemyPrefab);
             _currentBattle++;
+            Invoke("FinalBattleStrikers", 10f);
             FinalBattleWasStarted = true;
+        }
+    }
+
+    private void FinalBattleStrikers()
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            SpawnEnemy(_shooterEnemyPrefab);
+            SpawnEnemy(_shooterEnemyPrefab);
         }
     }
 
@@ -169,6 +261,8 @@ public class RedSquareTutorialBattle : MonoBehaviour
     {
         if (!ReinforcementWasStarted)
         {
+            GameObject.FindWithTag("Player").GetComponent<StarterAssetsInputs>().
+                analogMovement = false;
             SpawnEnemy(_shooterEnemyPrefab);
             SpawnEnemy(_lightEnemyPrefab);
             SpawnEnemy(_lightEnemyPrefab);
@@ -182,8 +276,10 @@ public class RedSquareTutorialBattle : MonoBehaviour
     {
         if (!FifthBattleWasStarted)
         {
+            //_audioSource.Play();
             GameObject.FindWithTag("Player").GetComponent<StarterAssetsInputs>().
                 analogMovement = false;
+            Debug.Log("Fifthg");
             SpawnEnemy(_lightEnemyPrefab);
             SpawnEnemy(_lightEnemyPrefab);
             SpawnEnemy(_shooterEnemyPrefab);
@@ -213,4 +309,6 @@ public class RedSquareTutorialBattle : MonoBehaviour
     {
         Instantiate(enemyPrefab, GetRandomPointInRadius(), Quaternion.identity);
     }
+
+    private void QuitApplication() { Application.Quit(); }
 }

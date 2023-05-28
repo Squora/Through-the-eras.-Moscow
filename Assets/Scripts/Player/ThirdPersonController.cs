@@ -1,6 +1,8 @@
 ﻿using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
@@ -12,7 +14,7 @@ namespace StarterAssets
 {
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(PlayerInput))]
-
+    [RequireComponent (typeof(AudioSource))]
     public class ThirdPersonController : MonoBehaviour
     {
         [Header("Player")]
@@ -57,6 +59,7 @@ namespace StarterAssets
         private StarterAssetsInputs _input;
         private GameObject _mainCamera;
         private AudioSource _audioSource;
+        private Inventory _inventory;
 
         private const float _threshold = 0.01f;
 
@@ -67,7 +70,11 @@ namespace StarterAssets
 
         private bool _canDodge = true;
 
+        [Header("Rigle parameters")]
+        [SerializeField] private GameObject _rifle;
+        [SerializeField] private int _rifleDamage;
         [Header("Attack parameters")]
+        [SerializeField] private int _attackDamage;
         [SerializeField] private float _hitCooldown = 2f;
         [SerializeField] private bool _canAttack = true;
         [SerializeField] private float _attackTimer;
@@ -75,12 +82,15 @@ namespace StarterAssets
         [SerializeField] private float _attackPointRadius;
         [SerializeField] private Collider[] _colliders;
         [SerializeField] private LayerMask _attackMask;
+        [SerializeField] private AudioClip _attackAudioClip;
         [Header("Shoot ability parameters")]
         [SerializeField] private GameObject _bulletPrefab;
         [SerializeField] private Transform _bulletSpawn;
         [SerializeField] private GameObject _pistol;
         [SerializeField] private int _shootForce = 20;
         [SerializeField] private int _shootDamage = 10;
+        [SerializeField] private GameObject _abilityUI;
+        [SerializeField] private AudioClip _shootAudioClip;
 
         private bool IsCurrentDeviceMouse
         {
@@ -109,6 +119,7 @@ namespace StarterAssets
             _input = GetComponent<StarterAssetsInputs>();
             _playerInput = GetComponent<PlayerInput>();
             _audioSource = GetComponent<AudioSource>();
+            _inventory = GetComponent<Inventory>();
 
             _fallTimeoutDelta = FallTimeout;
         }
@@ -327,22 +338,55 @@ namespace StarterAssets
         {
             if (_input.attack && _canAttack)
             {
-                transform.LookAt(_closestEnemy.transform);
-                _animator.SetTrigger("Attack");
-                _canAttack = false;
-
-                _colliders = Physics.OverlapSphere(_attackPoint.position,
-                    _attackPointRadius, _attackMask);
-
-                foreach (var collider in _colliders)
+                var hasRifle = false;
+                GameObject rifle = null;
+                foreach (var thing in _inventory.InventoryList)
                 {
-                    if (collider.tag == "Enemy" && Vector2.Distance(collider.gameObject.
-                        transform.position, gameObject.transform.position) < 2)
+                    if (thing.name == "Rifle")
                     {
-                        collider.GetComponent<Health>().TakeDamage(10);
+                        hasRifle = true;
+                        StartCoroutine(SetRifleActive(true, 0));
+                        rifle = thing;
+                    }
+                }
+
+                if (hasRifle)
+                {
+                    _animator.SetTrigger("Fire");
+                    _audioSource.clip = _shootAudioClip;
+                    MakeShot(1f, _rifleDamage);
+                    _audioSource.Play();
+                    _inventory.InventoryList.Remove(rifle);
+                    transform.LookAt(_closestEnemy.transform.position);
+                    StartCoroutine(SetRifleActive(false, 1.5f));
+                }
+                else
+                {
+                    _audioSource.clip = _attackAudioClip;
+                    transform.LookAt(_closestEnemy.transform);
+                    _animator.SetTrigger("Attack");
+                    _canAttack = false;
+
+                    _colliders = Physics.OverlapSphere(_attackPoint.position,
+                        _attackPointRadius, _attackMask);
+
+                    foreach (var collider in _colliders)
+                    {
+                        if (collider.tag == "Enemy" && Vector2.Distance(collider.gameObject.
+                            transform.position, gameObject.transform.position) < 2)
+                        {
+                            collider.GetComponent<Health>().TakeDamage(_attackDamage);
+                        }
+                        _audioSource.Play();
                     }
                 }
             }
+        }
+
+        private IEnumerator SetRifleActive(bool isActive, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            _rifle.SetActive(isActive);
         }
 
         private void ComboAttack()
@@ -389,24 +433,28 @@ namespace StarterAssets
             {
                 _input.shootPistol = false;
                 StartCoroutine(SetPistolActive(true, 0.2f));
+                _abilityUI.GetComponent<Abilities>().ShowPistolAbility(true);
                 _animator.SetTrigger("ShootPistol");
-                Invoke("MakeShot", 1f);
+                //Invoke("MakeShot", 1f);
+                StartCoroutine(MakeShot(1f, _shootDamage));
                 transform.LookAt(_closestEnemy.transform.position);
                 StartCoroutine(SetPistolActive(false, 2f));
                 _input.canShoot = false;
+                _abilityUI.GetComponent<Abilities>().ShowPistolAbility(_input.canShoot);
                 StartCoroutine(Reload(10));
             }
         }
 
-        private void MakeShot()
+        private IEnumerator MakeShot(float delay, int damage)
         {
+            yield return new WaitForSeconds(delay);
             Vector3 direction = _closestEnemy.transform.position
                 - transform.position;
             GameObject bullet = Instantiate(_bulletPrefab,
                 _bulletSpawn.position, transform.rotation);
             bullet.GetComponent<Rigidbody>().AddForce
                 (direction.normalized * _shootForce, ForceMode.Impulse);
-            _closestEnemy.GetComponent<Health>().TakeDamage(_shootDamage);
+            _closestEnemy.GetComponent<Health>().TakeDamage(damage);
             _audioSource.Play();
         }
 
@@ -420,6 +468,7 @@ namespace StarterAssets
         {
             yield return new WaitForSeconds(delay);
             _input.canShoot = true;
+            _abilityUI.GetComponent<Abilities>().ShowPistolAbility(_input.canShoot);
         }
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)

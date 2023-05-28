@@ -17,14 +17,12 @@ public class Sabre : MonoBehaviour, IInteractable
             "так и колющие удары. “акже может блокировать удары холодного оружи€ противников." +
             "\r\n«а счет своей массы и клинка способен пробивать кирасы и любую защиту " +
             "противников Ц но € не совсем уверен в ваших физических способност€х, поэтому " +
-            "гарантировать стабильность такого удара не могу.\r\n”дар Ц нажмите Е\r\n—ильный " +
-            "удар Ц нажмите Е\r\nЅлок Ц нажмите Е", 10f);
+            "гарантировать стабильность такого удара не могу.\r\n”дар Ц нажмите [Ћ ћ]", 10f);
         var inventory = interactor.GetComponent<Inventory>();
         if (inventory == null) return false;
 
         if (inventory.HasKey)
         {
-            //_popupSystem.AddPopupAlert("¬нимание!", "¬ы подобрали саблю", 5f);
             Debug.Log("Saber was taken");
             inventory.AddThing(gameObject);
             gameObject.layer = 0;

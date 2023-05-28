@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class RangeCombat : MonoBehaviour
 {
     [Header("Attack parameters")]
@@ -11,12 +12,14 @@ public class RangeCombat : MonoBehaviour
     [SerializeField] private float _attackTimer;
     [SerializeField] private float _hitDelay = 0;
     [SerializeField] private float _aimingTime = 0;
+    [SerializeField] private AudioSource _audioSource;
 
     private Animator _animator;
 
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -42,6 +45,7 @@ public class RangeCombat : MonoBehaviour
             _animator.SetTrigger("Attack");
             _canAttack = false;
             Invoke("HitPlayer", _hitDelay);
+            _audioSource.Play();
         }
     }
 

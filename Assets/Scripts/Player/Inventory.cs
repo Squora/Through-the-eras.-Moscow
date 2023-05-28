@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     public bool HasKey = false;
 
     [SerializeField] private Transform _handTransform;
-    [SerializeField] private List<GameObject> _inventory = new List<GameObject>();
+    public List<GameObject> InventoryList = new List<GameObject>();
     [SerializeField] private int _inventorySize = 5;
     [SerializeField] private GameObject _inHandObject;
 
@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
         //if (Keyboard.current.qKey.wasPressedThisFrame) HasKey = !HasKey;
         if (Input.GetKeyDown(KeyCode.Q) && _inHandObject != null)
         {
-            _inventory.Remove(_inHandObject);
+            InventoryList.Remove(_inHandObject);
             _inHandObject.transform.SetParent(null);
             _inHandObject = null;
         }
@@ -31,9 +31,9 @@ public class Inventory : MonoBehaviour
 
     public void AddThing(GameObject thing)
     {
-        if (_inventory.Count < _inventorySize)
+        if (InventoryList.Count < _inventorySize)
         {
-            _inventory.Add(thing);
+            InventoryList.Add(thing);
             if (thing.GetComponent<IInteractable>().CanBeHeldInHand && _inHandObject == null)
             {
                 thing.transform.position = Vector3.zero;

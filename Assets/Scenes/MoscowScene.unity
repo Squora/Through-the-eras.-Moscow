@@ -4716,7 +4716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 972e1a70fb4ceeb46a0ccdca1a560c86, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.1
+      value: 17.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 972e1a70fb4ceeb46a0ccdca1a560c86, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4753,11 +4753,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 972e1a70fb4ceeb46a0ccdca1a560c86, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e2e2fceaf005c6f4d90673c54be6fb83, type: 2}
+      objectReference: {fileID: 2100000, guid: 3660ab34a24935f47a91b24508e31348, type: 2}
     - target: {fileID: -7511558181221131132, guid: 972e1a70fb4ceeb46a0ccdca1a560c86, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: a6f1a23e05101f14e9c96c3ce1f95eb4, type: 2}
+      objectReference: {fileID: 2100000, guid: 786803e1b2923af43bc3759fba8edb2b, type: 2}
     - target: {fileID: -7511558181221131132, guid: 972e1a70fb4ceeb46a0ccdca1a560c86, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -5878,7 +5878,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: a9f13be415e03374aa36844ea10acf6f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e2e2fceaf005c6f4d90673c54be6fb83, type: 2}
+      objectReference: {fileID: 2100000, guid: 96bde8f6ee5e24d40ac6e1e9872b6b9d, type: 2}
     - target: {fileID: 919132149155446097, guid: a9f13be415e03374aa36844ea10acf6f, type: 3}
       propertyPath: m_Name
       value: NikolskyGreekMonastery
@@ -35843,7 +35843,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 09426f3a357adc04092609f67c79a1dc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e2e2fceaf005c6f4d90673c54be6fb83, type: 2}
+      objectReference: {fileID: 2100000, guid: 2c3a47504d55f094e8ac0efae8358bb4, type: 2}
     - target: {fileID: 919132149155446097, guid: 09426f3a357adc04092609f67c79a1dc, type: 3}
       propertyPath: m_Name
       value: StreetNikolskaya7-9-1
@@ -55605,6 +55605,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 22a228349ec6b004aa0c62efe3101d58, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff63495b2ddbf834ab65449b39104023, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 22a228349ec6b004aa0c62efe3101d58, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d5cf51695b08cc4ebde7bcee0a9fc12, type: 2}
     - target: {fileID: 919132149155446097, guid: 22a228349ec6b004aa0c62efe3101d58, type: 3}
       propertyPath: m_Name
       value: LobnoyeMesto
@@ -56478,5 +56486,9 @@ PrefabInstance:
       propertyPath: _panel
       value: 
       objectReference: {fileID: 1551257383}
+    - target: {fileID: 8396899807094077857, guid: a9f29025eb70bf54dba0d0c6edc7c04a, type: 3}
+      propertyPath: _popUpInformationAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fa10dbc3bd17438429c98fec013b62e9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9f29025eb70bf54dba0d0c6edc7c04a, type: 3}

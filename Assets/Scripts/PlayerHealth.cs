@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("Other")]
     [SerializeField] private string _animationHitName;
     [SerializeField] private GameObject _deathPanel;
+    [SerializeField] private GameObject _healthBar;
     private Animator _animator;
 
     private float _timer;
@@ -45,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 _animator.SetTrigger("Hurt");
                 _currentHealth -= damage;
+                _healthBar.GetComponent<HealthBar>().SetHealth(_currentHealth);
             }
         }
     }

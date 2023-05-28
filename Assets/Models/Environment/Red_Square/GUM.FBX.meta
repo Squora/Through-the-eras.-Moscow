@@ -3,7 +3,82 @@ guid: 972e1a70fb4ceeb46a0ccdca1a560c86
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@88267_alb
+    second: {fileID: 2800000, guid: 158b8aba73426ae4d986485f066aed56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@88267_e
+    second: {fileID: 2800000, guid: 1753aba76d6db764187cf70f3a769bb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@88267_sh
+    second: {fileID: 2800000, guid: af4b51da478919849bd0976657fc955a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gum_roof_alb
+    second: {fileID: 2800000, guid: 8629fc90e7a02a541ad9e01c82d4d43f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gum_roof_n
+    second: {fileID: 2800000, guid: 1e165122ac8e37849a33d1cebfcca16d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gum_roof_sh
+    second: {fileID: 2800000, guid: f02c84662bd60f34c8e3f31c8630a399, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gum_window_alb
+    second: {fileID: 2800000, guid: 1537063f185c0e349b8c8017a90b5167, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gum_window_n
+    second: {fileID: 2800000, guid: 9d715ef13a6ccc546bfe932c1caea523, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gum_window_sh
+    second: {fileID: 2800000, guid: eeb18f6c8e3e3194c94f82c8dba18a68, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_roof_painted_sh
+    second: {fileID: 2800000, guid: e56d7d9326c41654bae9e3700be155f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1_n
+    second: {fileID: 2800000, guid: e109858dfe3b9ed44b730c80980efa06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_3
+    second: {fileID: 2800000, guid: e7db991a15793a74fb3ab445c0b38b3c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_5
+    second: {fileID: 2800000, guid: fd86f1eae3efefc498a172163f40f9e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_5_n
+    second: {fileID: 2800000, guid: 1a7c0deae18e9ca45a6f3f1f72b907dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ruberoid_rooff_sh
+    second: {fileID: 2800000, guid: 2a0c3dd3fe61fa842865ccb48551851b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
