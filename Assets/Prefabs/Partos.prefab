@@ -2527,6 +2527,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361906002064050738}
     m_Modifications:
+    - target: {fileID: 255886291845772996, guid: b5fc1ea1b263f4d43a53f2408436c24e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 255886292615887710, guid: b5fc1ea1b263f4d43a53f2408436c24e, type: 3}
       propertyPath: m_Name
       value: Sabre

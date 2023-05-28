@@ -241,18 +241,19 @@ public class RedSquareTutorialBattle : MonoBehaviour
             SpawnEnemy(_cuirassierEnemyPrefab);
             SpawnEnemy(_cuirassierEnemyPrefab);
             _currentBattle++;
-            Invoke("FinalBattleStrikers", 10f);
+            SpawnEnemy(_shooterEnemyPrefab);
+            SpawnEnemy(_shooterEnemyPrefab);
+            Invoke("FinalBattleStrikers", 20f);
+            Invoke("FinalBattleStrikers", 20f);
+            Invoke("FinalBattleStrikers", 25f);
+            Invoke("FinalBattleStrikers", 30f);
             FinalBattleWasStarted = true;
         }
     }
 
     private void FinalBattleStrikers()
     {
-        for (int i = 0; i < 8; i++)
-        {
-            SpawnEnemy(_shooterEnemyPrefab);
-            SpawnEnemy(_shooterEnemyPrefab);
-        }
+        SpawnEnemy(_shooterEnemyPrefab);
     }
 
     private void Reinforcement()

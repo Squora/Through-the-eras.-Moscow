@@ -21260,7 +21260,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1204827585
+--- !u!114 &1204827597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32230,6 +32230,10 @@ PrefabInstance:
       propertyPath: _rifle
       value: 
       objectReference: {fileID: 904371376}
+    - target: {fileID: 113657447863207486, guid: a9f29025eb70bf54dba0d0c6edc7c04a, type: 3}
+      propertyPath: Gravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 113657447863207486, guid: a9f29025eb70bf54dba0d0c6edc7c04a, type: 3}
       propertyPath: _pistol
       value: 

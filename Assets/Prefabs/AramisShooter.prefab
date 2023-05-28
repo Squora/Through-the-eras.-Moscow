@@ -892,7 +892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanBeDamaged: 1
   IsAlive: 1
-  _maxHealth: 40
+  _maxHealth: 30
   _currentHealth: 0
   _canRegenerateHealth: 0
   _delayBeforeRegenerateHealth: 0
@@ -2606,7 +2606,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2315738308386095384}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
