@@ -3,7 +3,22 @@ guid: fd930de9b6ee2524d9da60667d973226
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@88266_alb
+    second: {fileID: 2800000, guid: a258f8701172c1242a7ddc52250b7692, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@88266_sh
+    second: {fileID: 2800000, guid: 1b8875fa39276254a89a3f8423667049, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: varvarka_alpha
+    second: {fileID: 2800000, guid: 0d754684967e6b94aa3d667b62a3ed32, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

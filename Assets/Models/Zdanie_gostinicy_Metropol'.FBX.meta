@@ -3,7 +3,387 @@ guid: 8ed94c4a11825e44cbf615efe890996d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk1"
+    second: {fileID: 2800000, guid: b2049b05645b4a841a7771237ac78661, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk2"
+    second: {fileID: 2800000, guid: 43e96c2d1ca5fce4ca4d3c9f36b46e85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk3"
+    second: {fileID: 2800000, guid: 1fd06ccfcc053044b94cd7fe6f07a2f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk4"
+    second: {fileID: 2800000, guid: 12bb91316e1a19743ac91b3cb1472cee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk5"
+    second: {fileID: 2800000, guid: dbc759b0f581267478f6ae40101c1271, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk55"
+    second: {fileID: 2800000, guid: aa69b8e866aee7b4aa5cc532be610713, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk6"
+    second: {fileID: 2800000, guid: 4329a0bc49c6ff8448d6dc065b1d1cbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_balk7"
+    second: {fileID: 2800000, guid: 918eba2a48fa04247a74d445c8881b96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_bel"
+    second: {fileID: 2800000, guid: 4c6f4de83d40c1c4485a92038b3a204e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_black"
+    second: {fileID: 2800000, guid: 68fb70c9dd0b6c64e8640aba340e1557, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door1"
+    second: {fileID: 2800000, guid: e1e5db6f66f72054aa4fcf31a22d0d06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door2"
+    second: {fileID: 2800000, guid: 863b042a135cd314086d0b99a24ddaad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door3"
+    second: {fileID: 2800000, guid: af512717dba8d2545b0ddada34262cdc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door4"
+    second: {fileID: 2800000, guid: ffbe6779ef4ff5d4693efff28138245f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door5"
+    second: {fileID: 2800000, guid: 34a4852b54451af4d82ec00671679c07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door6"
+    second: {fileID: 2800000, guid: 14dda3cfc8388064fa3aaeb46b90bbad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door6u"
+    second: {fileID: 2800000, guid: 98d59f1a1283bac478bd65041bdb7ef6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_door7"
+    second: {fileID: 2800000, guid: 260d3ac55fcc2c2468b5e51eb2bc2f57, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_kant1"
+    second: {fileID: 2800000, guid: 32691559a75cf25428175c2e3849912e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_kant2"
+    second: {fileID: 2800000, guid: 578017c44bdcb474ebedfdc572201c13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_kant3"
+    second: {fileID: 2800000, guid: 73d3db6e3fc64c448939e3707c9189be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_kant4"
+    second: {fileID: 2800000, guid: 00546331ec93b994081eb4433b63ac23, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_kirp"
+    second: {fileID: 2800000, guid: ba033e8575cff874e9cd00eda38132c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_kr1"
+    second: {fileID: 2800000, guid: 05db302c0d9bd924eb6b6ea451c4f844, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_kr3"
+    second: {fileID: 2800000, guid: 0f6deba1e4525b443b40a61d7ab5cab9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s1"
+    second: {fileID: 2800000, guid: a41053ca4e79ada4db2367f34b058e3c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s10"
+    second: {fileID: 2800000, guid: 5e7d568e991b645428521b00d6a4dfef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s11"
+    second: {fileID: 2800000, guid: 805a698911dd37a499baf10765345194, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s11u"
+    second: {fileID: 2800000, guid: fec3f9d3fb3563248a5c67a8c9a1b9d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s12"
+    second: {fileID: 2800000, guid: f7ec4ddf5c57dcd4d811d5c1b65daa28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s12up"
+    second: {fileID: 2800000, guid: 902af0bceed648d439f5a005dfbe468e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s13"
+    second: {fileID: 2800000, guid: ee87e0023deafd44c821af9f92cd11e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s13u"
+    second: {fileID: 2800000, guid: a0a620688794c574bb1e52f912155bbc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s13u2"
+    second: {fileID: 2800000, guid: a21a8aefd63d0e441aa3500396b8f326, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s14"
+    second: {fileID: 2800000, guid: 5afa1777b82391640a35a50fe06d2d79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s15"
+    second: {fileID: 2800000, guid: d46421036b0b4d54881eff01914660a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s15u"
+    second: {fileID: 2800000, guid: e1defc36c1507a54b9c26f871b012e7d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s15u1"
+    second: {fileID: 2800000, guid: f9412afb4ad9e364e8b2268e19bf186f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s15up"
+    second: {fileID: 2800000, guid: 46b9cf10e082f424daaaeae1ee833c70, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s15up2"
+    second: {fileID: 2800000, guid: c5b9c0bd4de84274eba3bba77fc616f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s16"
+    second: {fileID: 2800000, guid: 6652c45ecbde2dd4a96695a84bd0a470, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s17"
+    second: {fileID: 2800000, guid: c232dc6a51c63114ca0a7c9bded8ee5a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s17d"
+    second: {fileID: 2800000, guid: 8d3f737a37c5c1740a3a4c868bebb0d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s17d1"
+    second: {fileID: 2800000, guid: ce966f5938713694287cb4ad4a02e5f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s17d2"
+    second: {fileID: 2800000, guid: 11aa4d034d072b849a1872cca67f6440, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s17du"
+    second: {fileID: 2800000, guid: e30623e3a6af62a4795a04b52e19a032, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s18"
+    second: {fileID: 2800000, guid: 28faf664415fb1b4287695020b28f738, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s18u"
+    second: {fileID: 2800000, guid: 6a74a67a548655142b1eedeb794961da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s19"
+    second: {fileID: 2800000, guid: 46fbaa33ce28a0943bcc5944de7293f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s19d"
+    second: {fileID: 2800000, guid: 962f6a3145316c64b9b22680261478ce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s19d1"
+    second: {fileID: 2800000, guid: f0d5c141c12b2344e80f207c42f194ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s19d2"
+    second: {fileID: 2800000, guid: 0e859f2c7804a494698ad070d6a30b81, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s19u"
+    second: {fileID: 2800000, guid: 15f327ce1e8b6924784c113634d34965, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s2"
+    second: {fileID: 2800000, guid: a9e2172f4fc343344b65267f8a3e1bfa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s20"
+    second: {fileID: 2800000, guid: cfd03ec32479b254782c5ec2a8f3236d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s20m"
+    second: {fileID: 2800000, guid: 842417efce28d5d498573f04435d9ee9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s2u"
+    second: {fileID: 2800000, guid: 782105828b57ce546a287b2544dc33c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s3"
+    second: {fileID: 2800000, guid: f65b0a6284c968847bd059ec0cc1fb62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s4"
+    second: {fileID: 2800000, guid: f730a7576f7495e4dae6b261c8689c9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s4u"
+    second: {fileID: 2800000, guid: 5310d4dacf663c048a341e9a32d93036, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s5"
+    second: {fileID: 2800000, guid: f2870006253ad574b95e6db4d5d48898, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s5u"
+    second: {fileID: 2800000, guid: 216386ceeafbb374c986901c7fe42e63, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s5u2"
+    second: {fileID: 2800000, guid: f0a88eb57b8b1804e9b34cdeacd5a89f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s6"
+    second: {fileID: 2800000, guid: 3c0104cbf217a414992e55d04c030dbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s7"
+    second: {fileID: 2800000, guid: ff770c76946f95843ab141e61472c41d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s8"
+    second: {fileID: 2800000, guid: 5b66999f331b4f54b8ae103bec4a344f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_s9"
+    second: {fileID: 2800000, guid: 791da1962d7ec5a4da929cd7bae3c777, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_wall1"
+    second: {fileID: 2800000, guid: 80955d9bf9e6e1e489a9a313335d8b3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_wall2"
+    second: {fileID: 2800000, guid: 0bf4e5b76df576d418c3a4a77aced8ce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_win1"
+    second: {fileID: 2800000, guid: bfce3fe6f8ea6cb4584851497a80351d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_win2"
+    second: {fileID: 2800000, guid: 2ee5358a810ede348b5de2ec8c98496e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_win22"
+    second: {fileID: 2800000, guid: cd2d49b2c7bebf548b80f7db1d63ef21, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_win3"
+    second: {fileID: 2800000, guid: ae4f8c64233d472499cc51271254761d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_win4"
+    second: {fileID: 2800000, guid: 339dccdbc2fd5a446b01d0098bf2f1ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_win5"
+    second: {fileID: 2800000, guid: b5e98a7e4ad8f824cadf3331b0380d85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u044C_win6"
+    second: {fileID: 2800000, guid: b4a23f95cf6ebc54098a4b66e7c935b2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
