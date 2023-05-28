@@ -50,10 +50,9 @@ public class AIAssistant : MonoBehaviour
         _audioSource.clip = _popUpInformationAudioClip;
         _audioSource.Play();
 
-        Debug.Log(text.Length);
-        if (text.Length < 350) _text.fontSize = 20;
-        else if (text.Length < 600) _text.fontSize = 14;
-        else _text.fontSize = 12;
+        if (text.Length < 350) _text.fontSize = 36;
+        else if (text.Length < 600) _text.fontSize = 26;
+        else _text.fontSize = 24;
 
         _text.text = text;
         _panel.SetActive(true);

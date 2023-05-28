@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private bool _isShowing = true;
     [SerializeField] private Color _spawnRadiusColor = Color.white;
 
+    [SerializeField] private AudioClip[] _voiceLines;
     public delegate void PlayerDetectedEventHandler();
     public event PlayerDetectedEventHandler OnPlayerSpotted, OnPlayerMissing;
     private Animator _animator;
@@ -57,6 +58,9 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        int randomVoiceLine = Random.Range(0, _voiceLines.Length);
+        GetComponent<AudioSource>().clip = _voiceLines[randomVoiceLine];
+        GetComponent<AudioSource>().Play();
         Agent = GetComponent<NavMeshAgent>();
         //_player = GameObject.FindGameObjectWithTag("Player").transform;
         Agent.speed = _walkSpeed;

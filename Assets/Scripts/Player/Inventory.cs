@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -21,12 +20,12 @@ public class Inventory : MonoBehaviour
     private void Update()
     {
         //if (Keyboard.current.qKey.wasPressedThisFrame) HasKey = !HasKey;
-        if (Input.GetKeyDown(KeyCode.Q) && _inHandObject != null)
-        {
-            InventoryList.Remove(_inHandObject);
-            _inHandObject.transform.SetParent(null);
-            _inHandObject = null;
-        }
+        //if (Input.GetKeyDown(KeyCode.Q) && _inHandObject != null)
+        //{
+        //    InventoryList.Remove(_inHandObject);
+        //    _inHandObject.transform.SetParent(null);
+        //    _inHandObject = null;
+        //}
     }
 
     public void AddThing(GameObject thing)

@@ -15,6 +15,7 @@ public class Interactor : MonoBehaviour
 
     private readonly Collider[] _colliders = new Collider[3];
     [SerializeField] private int _numFound;
+    [SerializeField] private GameObject _uiHelper;
 
     private StarterAssetsInputs _input;
 
@@ -30,6 +31,7 @@ public class Interactor : MonoBehaviour
 
         if (_numFound > 0)
         {
+            _uiHelper.SetActive(true);
             var interactable = _colliders[0].GetComponent<IInteractable>();
 
             if (interactable != null && _input.interact)
@@ -37,6 +39,7 @@ public class Interactor : MonoBehaviour
                 interactable.Interact(this);
             }
         }
+        else _uiHelper.SetActive(false);
     }
 
     private void OnDrawGizmos()

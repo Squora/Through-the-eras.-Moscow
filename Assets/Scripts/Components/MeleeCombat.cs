@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 [RequireComponent(typeof(AudioSource))]
 public class MeleeCombat : MonoBehaviour
@@ -13,6 +10,7 @@ public class MeleeCombat : MonoBehaviour
     [SerializeField] private float _attackTimer;
     [SerializeField] private int _attackCount = 1;
     [SerializeField] private float _hitDelay = 0;
+    [SerializeField] private AudioClip _attackClip;
     [SerializeField] private AudioSource _audioSource;
 
     private Animator _animator;
@@ -51,6 +49,7 @@ public class MeleeCombat : MonoBehaviour
             }
             _canAttack = false;
             Invoke("HitPlayer", _hitDelay);
+            _audioSource.clip = _attackClip;
             _audioSource.Play();
         }
     }

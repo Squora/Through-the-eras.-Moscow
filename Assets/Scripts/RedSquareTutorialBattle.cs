@@ -52,9 +52,7 @@ public class RedSquareTutorialBattle : MonoBehaviour
     {
         _aiAssistant = FindObjectOfType<AIAssistant>();
         //_audioSource = GetComponent<AudioSource>();
-        _currentBattle = 3;
-        _aiAssistant.SayInformation("Чтобы подобрать оружие, воспользуйтесь" +
-            "клавишей [E]", 5f);
+        _currentBattle = 1;
     }
 
     private void Update()

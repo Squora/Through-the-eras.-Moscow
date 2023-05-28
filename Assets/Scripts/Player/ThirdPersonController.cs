@@ -1,13 +1,7 @@
 ﻿using Cinemachine;
 using System.Collections;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 namespace StarterAssets
@@ -138,19 +132,9 @@ namespace StarterAssets
                 Move();
             }
             Attack();
-            ComboAttack();
+            //ComboAttack();
             AttackCooldown();
             ShootPistol();
-
-            //Enemy[] enemies = FindObjectsOfType<Enemy>();
-            //if (enemies != null)
-            //{
-            //    foreach (var enemy in enemies)
-            //    {
-            //        enemy.OnPlayerSpotted += OnPlayerSpotted;
-            //        enemy.OnPlayerMissing += OnPlayerMissing;
-            //    }
-            //}
         }
 
         private void LateUpdate()
@@ -158,23 +142,8 @@ namespace StarterAssets
             CameraRotation();
         }
 
-        //private void OnPlayerSpotted()
-        //{
-        //    Debug.Log("Enemy detected the player!");
-        //    PlayerDetected = true;
-        //    _closestEnemy = FindClosestEnemy();
-        //}
-
-        //private void OnPlayerMissing()
-        //{
-        //    Debug.Log("Enemy missed the player!");
-        //    PlayerDetected = false;
-        //    _input.fixCursorOnEnemy = false;
-        //}
-
         private void GroundedCheck()
         {
-            // set sphere position, with offset
             Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y
                 - GroundedOffset,
                 transform.position.z);
@@ -184,7 +153,8 @@ namespace StarterAssets
 
         private void CameraRotation()
         {
-            if (_input.fixCursorOnEnemy == false)            {
+            if (_input.fixCursorOnEnemy == false)
+            {
                 // if there is an input and camera position is not fixed
                 if (_input.look.sqrMagnitude >= _threshold && !LockCameraPosition)
                 {
@@ -431,11 +401,11 @@ namespace StarterAssets
         {
             if (_input.shootPistol && _input.canShoot)
             {
+                _audioSource.clip = _shootAudioClip;
                 _input.shootPistol = false;
                 StartCoroutine(SetPistolActive(true, 0.2f));
                 _abilityUI.GetComponent<Abilities>().ShowPistolAbility(true);
                 _animator.SetTrigger("ShootPistol");
-                //Invoke("MakeShot", 1f);
                 StartCoroutine(MakeShot(1f, _shootDamage));
                 transform.LookAt(_closestEnemy.transform.position);
                 StartCoroutine(SetPistolActive(false, 2f));
@@ -493,12 +463,16 @@ namespace StarterAssets
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.tag == "Enemy") _closestEnemy = other.gameObject; PlayerDetected = true;
+            if (other.gameObject.tag == "Enemy")
+            {
+                _closestEnemy = other.gameObject;
+                PlayerDetected = true;
+            }
         }
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.tag == "Enemy") PlayerDetected = false;
+            if (other.gameObject.tag == "Enemy") PlayerDetected = false;
         }
 
         private void OnDrawGizmosSelected()

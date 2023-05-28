@@ -361,6 +361,11 @@ MonoBehaviour:
   PlayerInArea: 0
   _isShowing: 1
   _spawnRadiusColor: {r: 1, g: 1, b: 1, a: 1}
+  _voiceLines:
+  - {fileID: 8300000, guid: 1ac859a829de886459bd75f2c46ccb9d, type: 3}
+  - {fileID: 8300000, guid: 628d3ca6544560c469995b595aac8e6d, type: 3}
+  - {fileID: 8300000, guid: 0b30dc85de029034ab5433d2d5f2da2f, type: 3}
+  - {fileID: 8300000, guid: 915444b89812d1345a3f6480c024515a, type: 3}
   PlayerIsOnAttackDistantion: 0
 --- !u!195 &2067173519895557629
 NavMeshAgent:
@@ -424,6 +429,7 @@ MonoBehaviour:
   _attackTimer: 0
   _attackCount: 2
   _hitDelay: 1
+  _attackClip: {fileID: 8300000, guid: 07c38e0499aea4acd81b44991c0e4d07, type: 3}
   _audioSource: {fileID: 0}
 --- !u!82 &4788345112336104073
 AudioSource:
@@ -436,7 +442,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 07c38e0499aea4acd81b44991c0e4d07, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

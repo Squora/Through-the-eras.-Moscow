@@ -18,14 +18,12 @@ public class MusicPlayer : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (_audioSource.isPlaying == false)
         {
-            if (_currentMusicIndex < _playlist.Length - 1) _currentMusicIndex++;
-            else _currentMusicIndex = 0;
+            _currentMusicIndex++;
+            if (_currentMusicIndex > _playlist.Length) _currentMusicIndex = 0;
             _audioSource.clip = _playlist[_currentMusicIndex];
             _audioSource.Play();
         }
-        if (!_audioSource.isPlaying && _audioSource.time == 0) _currentMusicIndex++;
-        else if (_currentMusicIndex > _playlist.Length - 1) _currentMusicIndex = 0;
     }
 }

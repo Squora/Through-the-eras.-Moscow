@@ -12,6 +12,7 @@ public class RangeCombat : MonoBehaviour
     [SerializeField] private float _attackTimer;
     [SerializeField] private float _hitDelay = 0;
     [SerializeField] private float _aimingTime = 0;
+    [SerializeField] private AudioClip _attackClip;
     [SerializeField] private AudioSource _audioSource;
 
     private Animator _animator;
@@ -45,6 +46,7 @@ public class RangeCombat : MonoBehaviour
             _animator.SetTrigger("Attack");
             _canAttack = false;
             Invoke("HitPlayer", _hitDelay);
+            _audioSource.clip = _attackClip;
             _audioSource.Play();
         }
     }
