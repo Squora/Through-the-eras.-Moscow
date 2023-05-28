@@ -3,7 +3,12 @@ guid: c66c297a512d8ae42b0756535b49603c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@minin_pozharskiy_monument_alb
+    second: {fileID: 2800000, guid: e3eaacf3480c76c42a4c2cc819e94c8e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

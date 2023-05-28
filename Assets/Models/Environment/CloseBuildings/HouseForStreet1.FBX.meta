@@ -3,7 +3,12 @@ guid: 9f026c17df3972b408a8a93f0b269e9d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BolshayaNikitskaya_1k2
+    second: {fileID: 2800000, guid: a66234a2e89fdde4ba3d8af95e88c36b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

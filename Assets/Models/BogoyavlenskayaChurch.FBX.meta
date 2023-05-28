@@ -3,7 +3,52 @@ guid: 089ba1259a563aa40ad2af898089a94c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@114480_alb
+    second: {fileID: 2800000, guid: 86ccec74f77d2674ca5c5fda33d44ada, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: _metal_roof__sh
+    second: {fileID: 2800000, guid: c03acdcb23ef4f449b26eebfe7f1ac3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: golden
+    second: {fileID: 2800000, guid: 551108309ec79aa42b75191a8f380aa9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pink
+    second: {fileID: 2800000, guid: d9a1ddda720592143908bb6dcd62867c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1_n
+    second: {fileID: 2800000, guid: 63e97999f1fee5947821dea346871ae9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1_sh
+    second: {fileID: 2800000, guid: 3e0805bfebe2f994c929cd3a82cbcc92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_7
+    second: {fileID: 2800000, guid: 4abea813f75fadd43a9bbfe4fd17f761, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_8
+    second: {fileID: 2800000, guid: bba0d79b190610a4a9eb98a2e7236967, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2800000, guid: beacb5097971e7549acd4988d3f214b1, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

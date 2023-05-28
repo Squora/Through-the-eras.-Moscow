@@ -3,7 +3,17 @@ guid: b7e9046f2a28b4c47a4ff193c257f441
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TverskoiBulvar_24
+    second: {fileID: 2800000, guid: 20edea892b682de4dab8a5e1058694e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TverskoiBulvar_24_alpha
+    second: {fileID: 2800000, guid: a19643b002cec0d4cb937dbf03e91fac, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

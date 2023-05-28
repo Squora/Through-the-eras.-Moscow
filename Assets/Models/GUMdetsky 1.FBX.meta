@@ -3,7 +3,47 @@ guid: c7dc032ea59103e4f8099118ab866421
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_alb
+    second: {fileID: 2800000, guid: da45a2acdfac6af4e9e1694cb746044f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_e
+    second: {fileID: 2800000, guid: 2ce76a4a90295cb42b0faf036b70ad4d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_id2_alb
+    second: {fileID: 2800000, guid: a1627b2d11eef414b827179e807fef62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_id2_e
+    second: {fileID: 2800000, guid: 0a64404a1a07f6a42b3615cbd445a8c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_id2_n
+    second: {fileID: 2800000, guid: 32e2946e8da17a442872acf5268d119b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_id2_sh
+    second: {fileID: 2800000, guid: a5a5efdbb88cb2c4d8712448cd2f2f95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_n
+    second: {fileID: 2800000, guid: dc2151302478cd24f8ad7117590a49ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@106210_sh
+    second: {fileID: 2800000, guid: 96863c67bbbdef84a8218bf1d96e258a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,457 @@ guid: 232331427f0ce57468ac0a3944ffc5e8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1
+    second: {fileID: 2800000, guid: f6265932232eec841b6f683e471ae4b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 10
+    second: {fileID: 2800000, guid: 877b316a28049994b91754b019515e35, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2
+    second: {fileID: 2800000, guid: f76add5d128187841a245cd4ad6e5eac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 3
+    second: {fileID: 2800000, guid: db25d2d5956fc53498b126c0842ce3f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 4
+    second: {fileID: 2800000, guid: ebe45013e176d6f4aa2ff8eca18d79ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 5
+    second: {fileID: 2800000, guid: 6d0a96f2709ebb44abd5b8cbda1c31e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 6
+    second: {fileID: 2800000, guid: 86626d0222eaea44c93b61c85efb2281, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 7
+    second: {fileID: 2800000, guid: 286116624998f2f40b8d64e960d05f98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 8
+    second: {fileID: 2800000, guid: 9d95a7920287b1d47a39e94e735cbe78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 9
+    second: {fileID: 2800000, guid: 00d883db5b481704d8a94c6d9f5b6438, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_bok_nisha
+    second: {fileID: 2800000, guid: 3f17841c6102bf648bd3c518b6587ded, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_bok_nisha_1
+    second: {fileID: 2800000, guid: 1c9fae0e39e21cf4aaaad163226c6699, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_boynica
+    second: {fileID: 2800000, guid: a53e5efe23ea8684aa2d1a513bdc859a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_boynica_fon
+    second: {fileID: 2800000, guid: c87898c87280ef649900cf04cc494d87, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_boynica_left
+    second: {fileID: 2800000, guid: 29868c4d49755c94d93517e3b85130da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_chugun
+    second: {fileID: 2800000, guid: 0c36c5d29595d9245bd81fc3ac49209b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_front
+    second: {fileID: 2800000, guid: 9c3b42736f1c86d4b984523d322b62b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_front_1
+    second: {fileID: 2800000, guid: fc9bb0967762c054cb5dde9f587f9fa2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_front_2
+    second: {fileID: 2800000, guid: 1b569bbf6aea7f34282fb2972dcecc65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_front_nisha
+    second: {fileID: 2800000, guid: 193eb844926b0f04d989c87c6aa220d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_ikona
+    second: {fileID: 2800000, guid: 6cf9492b43a8f8b479252443cf6c04d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_ikona_rama
+    second: {fileID: 2800000, guid: 9f956882bb2581a4fb37ef7c5b1043bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_kirpich_fon
+    second: {fileID: 2800000, guid: db6979b84f4bc3046898529586d5a805, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_left
+    second: {fileID: 2800000, guid: 58ad7ce325d0ad14281007e2c1a9ea76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_left_1
+    second: {fileID: 2800000, guid: d8c6532c48297004ca51c7400b374f79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_left_2
+    second: {fileID: 2800000, guid: 3a491c92c3d6a7648b15d6affefd4acb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_left_3
+    second: {fileID: 2800000, guid: 505b881d0a8a2c1478c9f469f98ff7c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_lepnina
+    second: {fileID: 2800000, guid: 217ca428559368b40bc461deefcdfad9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_nisha_boynic
+    second: {fileID: 2800000, guid: e7aee543df755e043a4ece459bfed22e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_petli
+    second: {fileID: 2800000, guid: 0c7a04be66ac0e84c9b39086b3a041ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_right
+    second: {fileID: 2800000, guid: d39a672f01bc14847b4e4d8eb5548220, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_right_1
+    second: {fileID: 2800000, guid: d837fd2976f2c2f4d81616340a833a6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_vorota
+    second: {fileID: 2800000, guid: 9034f59758cb5bf4cac4238ef1782b02, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_vorota_1
+    second: {fileID: 2800000, guid: 1283c167f9e71cd4cb1c8af597cde647, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_1_vorota_2
+    second: {fileID: 2800000, guid: e1434285ed0f84c4da4d16ffbe102335, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_back_1
+    second: {fileID: 2800000, guid: aca9c6302d53bb046bae95a61bc6fb56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_front
+    second: {fileID: 2800000, guid: fe136ed6c2737eb4db223d755c090408, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_front_1
+    second: {fileID: 2800000, guid: 1eb92fdb0951d0746869de0b124f6a49, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_kolon
+    second: {fileID: 2800000, guid: 73a9fbc2b62bfa044a1cc518a09e3e05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_kolon_chast
+    second: {fileID: 2800000, guid: 211037bee987c8c45bbba99a84a6575a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left
+    second: {fileID: 2800000, guid: fcb98bc5840c3df4983c7ad1ade1ba4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1
+    second: {fileID: 2800000, guid: 743d12cb31c92854481aaf3492d8d5f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1_1
+    second: {fileID: 2800000, guid: 1ea6188b845bac846b41542e78e2813b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1_1_bok
+    second: {fileID: 2800000, guid: 2fc6d3f915d4e084a9b47cb05f83da79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1_boynica_1
+    second: {fileID: 2800000, guid: 2da2b15dfd8dec64abde2b65039ea42f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1_boynica_2
+    second: {fileID: 2800000, guid: 9cb4587afd3b5394d83399fad64790ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1_boynica_3
+    second: {fileID: 2800000, guid: da821184d9b86534f91409a32ae89098, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1_boynica_4
+    second: {fileID: 2800000, guid: 113dc30762fd98d43957aaf16bd05081, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_left_1_boynica_5
+    second: {fileID: 2800000, guid: d30e86a99588a1d47944fb52f9352b2c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_nisha
+    second: {fileID: 2800000, guid: 5e17f5d5593c940438edb4bd81ff0801, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_okno_1
+    second: {fileID: 2800000, guid: d505b8e99ba99d04583ef5eefe9ad66a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_right
+    second: {fileID: 2800000, guid: a41f5c73500876b44b6ca2b4f5dd2895, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bash_2_right_1
+    second: {fileID: 2800000, guid: 14932deeb680c824685462f144269030, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cherepica
+    second: {fileID: 2800000, guid: f70c35ef5f0753f47901666e96400805, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ciferblat
+    second: {fileID: 2800000, guid: 422f1446fd483184e82ff2c72a80fc96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fonar
+    second: {fileID: 2800000, guid: d6f055bac1e405c438acb9e9f19cb84c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kamen_bel
+    second: {fileID: 2800000, guid: b4b9ec73910feed44a0bfbf50e4de161, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kant
+    second: {fileID: 2800000, guid: 0fdbc948bcb5e904fa48afe9bda4a142, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich
+    second: {fileID: 2800000, guid: c37093d46813e584286e0ac7fe99c164, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich_5
+    second: {fileID: 2800000, guid: 131fa365d11f4f74890614afcaac6bb4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich_6
+    second: {fileID: 2800000, guid: 6ee89f93ed41160409fc41f9be1620a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich_bok
+    second: {fileID: 2800000, guid: 1115918ba63ba92428b90690ae03d78b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich_bok_2
+    second: {fileID: 2800000, guid: f73408ef40eb4f94ba560d41a4810fe7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kolon_front
+    second: {fileID: 2800000, guid: 622741c2e8c0353469b1a9fdde5bf134, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: krisha_zel
+    second: {fileID: 2800000, guid: 505ddd0ea02c21f4f84563b15437576c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lepnina
+    second: {fileID: 2800000, guid: dec968baa7e780040972dd126d59363b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nisha_uzor
+    second: {fileID: 2800000, guid: 5188a2eb58b66f141ad0ead3a99794df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: okno_front
+    second: {fileID: 2800000, guid: 971bedad5f34eca44922190555802f8c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: polosa
+    second: {fileID: 2800000, guid: ec8d7701fa94de24680cd6e4a7d8846e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pristoyka_polosa
+    second: {fileID: 2800000, guid: b29d9f6dd39b74649a0a261e7a35792a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pristroyyka_1
+    second: {fileID: 2800000, guid: 11d58b124daf090419c87ebe534ec79e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pristroyyka_2
+    second: {fileID: 2800000, guid: 0067287311d50e246a711debbdb450b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pristroyyka_dver
+    second: {fileID: 2800000, guid: a019a097aa98c6342bbdc230ee8252b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pristroyyka_dver_1
+    second: {fileID: 2800000, guid: 34b31461b32ccb043864a1dbf0ea1499, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pristroyyka_metall
+    second: {fileID: 2800000, guid: 4a267578788cae44db0eef0ddd578c10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pristroyyka_okno
+    second: {fileID: 2800000, guid: 57dfecb7ae3c791499745092fc2ce768, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ptica
+    second: {fileID: 2800000, guid: 808496b70dc31f04f86dcd4ff45d9a28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shov_krishi
+    second: {fileID: 2800000, guid: cef71b9c31de0c340b40323570c22438, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: stena11
+    second: {fileID: 2800000, guid: c885d20f8213b62449dd6083d7de0d37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: stupeni
+    second: {fileID: 2800000, guid: f581337a130fc9f45b65c8b96c691763, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: term
+    second: {fileID: 2800000, guid: 5792884cb7972b240878a2374af2ec41, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: truba
+    second: {fileID: 2800000, guid: 97788f044c7dfc34082563712467932b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: uzor
+    second: {fileID: 2800000, guid: c997b5e16f852034b9990c36bd8b9011, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: uzor1
+    second: {fileID: 2800000, guid: 7a6ab02a7e2d781469f3d13d40deb00e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: uzor_2
+    second: {fileID: 2800000, guid: cf4e528dd05f1ca478110e5822f8d091, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: uzor_arka
+    second: {fileID: 2800000, guid: 2913e70b8b770d74b8ca3fec4c679332, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zoloto
+    second: {fileID: 2800000, guid: 0b30b821ff852594da58a388ba0c92f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zver_1
+    second: {fileID: 2800000, guid: 87d2b8d3d907d124a90494996680fccb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zver_2
+    second: {fileID: 2800000, guid: a11a96db218840043a93e34e2e9f323c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zvezda
+    second: {fileID: 2800000, guid: c535c793e6ae5a54eb340324a8bac98a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,37 @@ guid: d380174b623789042b7a02ca0a524035
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_roof_painted_sh
+    second: {fileID: 2800000, guid: 560fbd762ff211b4f816afe38fcf1a3a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1
+    second: {fileID: 2800000, guid: 126998a1a521c2c47a3d78209c9363a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1_n
+    second: {fileID: 2800000, guid: ba8282dfb5883c74fa4588257ffc2973, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: state_historical_museum_01
+    second: {fileID: 2800000, guid: 0d94eabdf6cb5d742be97d7037e5211f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: state_historical_museum_02
+    second: {fileID: 2800000, guid: dec45f10546a48f45aa4541a83ff9fa8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: state_historical_museum_03_alpha
+    second: {fileID: 2800000, guid: ed26eaa491be0814da2427c273db6955, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

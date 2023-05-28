@@ -3,7 +3,57 @@ guid: 9dedbb16a4b3b3f4fbf13d27781afb82
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-70@12194_1_e
+    second: {fileID: 2800000, guid: b885a65544ad710409006e518289282f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-70@12194_alb
+    second: {fileID: 2800000, guid: 5b2d1b7dc296fe943950b08d25c2b77d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-70@12194_alpha
+    second: {fileID: 2800000, guid: 639a04ebc2c76e34e838ac94c767aca7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-70@12194_normal
+    second: {fileID: 2800000, guid: fd5b69b25e30b0747902fa04815afc56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-70@12194_part2
+    second: {fileID: 2800000, guid: 6a0e6733246619b409a8cdb0f39036ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-70@12194_part2_n
+    second: {fileID: 2800000, guid: b34c272d12990124f87b3a543e5504f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-70@12194_sh
+    second: {fileID: 2800000, guid: bd2effaf135ed4e46aa780a183d9152e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_roof_painted_sh
+    second: {fileID: 2800000, guid: 58e0adcc489221b45a15843df55b1107, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1_n
+    second: {fileID: 2800000, guid: 272e39de78ccc1c43bf9a97a514770d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_6
+    second: {fileID: 2800000, guid: b5a4ff1fe6db9284fb740bf0701d9fd4, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

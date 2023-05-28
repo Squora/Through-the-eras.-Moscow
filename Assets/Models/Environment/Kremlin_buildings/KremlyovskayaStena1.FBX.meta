@@ -3,7 +3,37 @@ guid: c66a6c811918a4749afd74bb8dd58acd
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kamen_bel
+    second: {fileID: 2800000, guid: eccf51b3db3bdbb4c90f4c5cc7233aab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kant
+    second: {fileID: 2800000, guid: a6bdc246bd30cc243acb8b9a58825a7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich
+    second: {fileID: 2800000, guid: 8c3a7b100dcf2e64ea77396eb519b2e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich_bok
+    second: {fileID: 2800000, guid: 657fb5e60b2c76346949657f906271dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich_mini
+    second: {fileID: 2800000, guid: 2b504f2259a06704cbb69d3ca8ca86c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kirpich_polosa_niz
+    second: {fileID: 2800000, guid: 4505a28fcd1dafa4b9c6b997b310ceae, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

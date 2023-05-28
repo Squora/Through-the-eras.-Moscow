@@ -3,7 +3,37 @@ guid: 41f4a47ea83a9ee499f64b8295ff51c4
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@72766_alb
+    second: {fileID: 2800000, guid: 53801630a6749604bb3ef9fe3f3c571d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@72766_e
+    second: {fileID: 2800000, guid: 78fbddeab1199544ca7ea6249629aa3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@72766_sh
+    second: {fileID: 2800000, guid: 6f9d555c809867645bb8192086d492ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_roof_painted_sh
+    second: {fileID: 2800000, guid: f7f96cc8a3c00f74b9b5aae383f76e24, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1
+    second: {fileID: 2800000, guid: ffdbff741d20f5743bda33c835baa705, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1_n
+    second: {fileID: 2800000, guid: 87d2ca374eb5aac42bdb9b040f6c12c4, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

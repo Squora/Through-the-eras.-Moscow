@@ -3,7 +3,57 @@ guid: 2227addd6f441cc4ba3446c712025406
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 001_grayblue
+    second: {fileID: 2800000, guid: d1e5c00d4488e9d4aa0732be1b6afa1e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@72771_alb
+    second: {fileID: 2800000, guid: 8e0a81bb47c35c84f9f72f4f8ac52cfe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01080-50@72771_e
+    second: {fileID: 2800000, guid: d65b61cc6f61e424a8d6e48289e8b5b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: golden
+    second: {fileID: 2800000, guid: 9eea72dfa7007f04d98729a76d3a1a9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: marble_02_256
+    second: {fileID: 2800000, guid: 5db89c196fc97644ba1df676def2ec0b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_roof_painted_sh
+    second: {fileID: 2800000, guid: d306e0131e8b2d04096c619e258e20a1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_roof_sh
+    second: {fileID: 2800000, guid: d2e99e7f1554ccf468628b74cf10c02f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_1_n
+    second: {fileID: 2800000, guid: e15cdf61514412948b8318284235cf96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof_512_7
+    second: {fileID: 2800000, guid: 44f7811dda13e2c40ba03852fc8bbfe7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2800000, guid: b386e3902ae5ae74aabc2767efd3a03f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
