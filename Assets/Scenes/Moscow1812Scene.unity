@@ -32368,7 +32368,7 @@ PrefabInstance:
       objectReference: {fileID: 1635176070}
     - target: {fileID: 1132757579511720600, guid: a9f29025eb70bf54dba0d0c6edc7c04a, type: 3}
       propertyPath: _maxHealth
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1132757579511720600, guid: a9f29025eb70bf54dba0d0c6edc7c04a, type: 3}
       propertyPath: _deathPanel
